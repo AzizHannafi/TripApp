@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549AB52A281938E40009B6A8 /* PlacePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549AB529281938E40009B6A8 /* PlacePresenter.swift */; };
 		54A5296C2817E6FB002263F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5296B2817E6FB002263F4 /* AppDelegate.swift */; };
 		54A5296E2817E6FB002263F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5296D2817E6FB002263F4 /* SceneDelegate.swift */; };
 		54A529702817E6FB002263F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5296F2817E6FB002263F4 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		549AB529281938E40009B6A8 /* PlacePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePresenter.swift; sourceTree = "<group>"; };
 		54A529682817E6FB002263F4 /* TripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5296B2817E6FB002263F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A5296D2817E6FB002263F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				54A529742817E6FB002263F4 /* TripApp.xcdatamodeld */,
 				54A52999281810DA002263F4 /* PlaceModel.swift */,
 				54A5299B28181DFC002263F4 /* PlaceDetailViewController.swift */,
+				549AB529281938E40009B6A8 /* PlacePresenter.swift */,
 			);
 			path = TripApp;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				54A5299C28181DFC002263F4 /* PlaceDetailViewController.swift in Sources */,
 				54A5298C2817E882002263F4 /* Const.swift in Sources */,
 				54A529972817FED1002263F4 /* PlaceTableViewCell.swift in Sources */,
+				549AB52A281938E40009B6A8 /* PlacePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

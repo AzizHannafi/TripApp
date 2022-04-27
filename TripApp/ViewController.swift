@@ -7,7 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegate,PlaceNotifier {
+    func showLoading() {
+        print("loading...")
+    }
+    
+    func getAllplaces(ListofPlaces : [PlaceModel]) {
+        print("get all places",ListofPlaces.count)
+        self.tab = ListofPlaces
+        self.TableView.reloadData()
+    }
+    
+    func hideLoading() {
+        print("loading hide")
+    }
+    var presenter:PlacePresenter = PlacePresenter()
 var tab:[PlaceModel] = [PlaceModel(title: "tunis", category: "category", ditancce: "50"),PlaceModel(title: "hammamet", category: "Zone tourestique", ditancce: "55"),PlaceModel(title: "ariana", category: "chapati mile7a", ditancce: "43")]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tab.count
@@ -32,6 +46,10 @@ var tab:[PlaceModel] = [PlaceModel(title: "tunis", category: "category", ditancc
         super.viewDidLoad()
         TableView.delegate = self
         TableView.dataSource = self
+        
+        self.presenter.placeNotifier = self
+        
+        self.presenter.fetchAllPlaces()
         TableView.register(UINib.init(nibName: "PlaceTableViewCell", bundle: nil), forCellReuseIdentifier: "PlaceTableViewCell")
         TableView.reloadData()
         // Do any additional setup after loading the view
