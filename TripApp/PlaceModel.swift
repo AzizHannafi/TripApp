@@ -6,13 +6,20 @@
 //
 
 import Foundation
-class PlaceModel{
-    var title:String
-    var category:String
-    var distance:String
-    init(title:String,category:String,ditancce:String){
-        self.title = title
-        self.category = category
-        self.distance = ditancce
-    }
+
+class PlacePoint:Decodable{
+    var lon: Double?
+    var lat:Double?
+}
+class PlaceModel: Decodable{
+
+var xid: String?
+
+var name: String?
+
+var dist: Double?
+
+var kinds: String?
+
+var point: PlacePoint?
 }

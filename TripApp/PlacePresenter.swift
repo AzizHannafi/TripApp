@@ -19,8 +19,8 @@ class PlacePresenter
     {
         placeNotifier.showLoading()
         
-        var myArr:[PlaceModel] = [ PlaceModel(title: "", category: "", ditancce: ""),PlaceModel(title: "", category: "", ditancce: ""),PlaceModel(title: "", category: "", ditancce: "")]
-        placeNotifier.getAllplaces(ListofPlaces: myArr)
+       
+        
         placeNotifier.hideLoading()
     }
 }

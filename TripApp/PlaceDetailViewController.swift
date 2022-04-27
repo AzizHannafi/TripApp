@@ -29,9 +29,9 @@ class PlaceDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let placeModel = placeModel {
-            self.titleLabel.text = placeModel.title
+            self.titleLabel.text = placeModel.name
             self.textView.text = ""
-            self.categoryLabel.text = placeModel.category
+            self.categoryLabel.text = placeModel.kinds
         }
 
         // Do any additional setup after loading the view.

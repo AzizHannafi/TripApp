@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         print("loading hide")
     }
     var presenter:PlacePresenter = PlacePresenter()
-var tab:[PlaceModel] = [PlaceModel(title: "tunis", category: "category", ditancce: "50"),PlaceModel(title: "hammamet", category: "Zone tourestique", ditancce: "55"),PlaceModel(title: "ariana", category: "chapati mile7a", ditancce: "43")]
+var tab:[PlaceModel] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tab.count
         
@@ -30,9 +30,9 @@ var tab:[PlaceModel] = [PlaceModel(title: "tunis", category: "category", ditancc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Cell = tableView.dequeueReusableCell(withIdentifier: "PlaceTableViewCell", for: indexPath) as! PlaceTableViewCell
-        Cell.Place.text = self.tab[indexPath.row].title
-        Cell.Category.text = self.tab[indexPath.row].category
-        Cell.Distance.text = self.tab[indexPath.row].distance
+        Cell.Place.text = self.tab[indexPath.row].name
+        Cell.Category.text = self.tab[indexPath.row].kinds
+        Cell.Distance.text = self.tab[indexPath.row].dist?.description
         return Cell
         
     }
