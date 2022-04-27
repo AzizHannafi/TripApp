@@ -10,12 +10,14 @@ import Foundation
 class PlaceService{
     func getAll(url:String,method:String,header:[String:String] = [:]) async throws -> Any!
     {
-        guard let url = URL(string: "") else {return nil}
+        guard let url = URL(string: url) else {return nil}
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = ""
+        urlRequest.httpMethod = method
         //urlRequest.httpBody = try JSONEncoder().encode(<#T##value: Encodable##Encodable#>)
         urlRequest.allHTTPHeaderFields = header
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
+        
+        print("mydata",String(data: data, encoding: .utf8))
         
         if let response = (response as? HTTPURLResponse)
         {

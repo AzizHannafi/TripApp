@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     func hideLoading() {
         print("loading hide")
     }
-    var presenter:PlacePresenter = PlacePresenter()
+    var presenter:PlacePresenter = PlacePresenter(placeService: PlaceService())
 var tab:[PlaceModel] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tab.count

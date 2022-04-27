@@ -29,7 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="De8-QP-GX8">
-                        <rect key="frame" x="20" y="34" width="69" height="21"/>
+                        <rect key="frame" x="20" y="34" width="219" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,10 +37,10 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="ph0-fo-80D" secondAttribute="trailing" constant="7" id="0fB-Wn-7Ye"/>
-                    <constraint firstAttribute="trailing" secondItem="De8-QP-GX8" secondAttribute="trailing" constant="250" id="4Gi-rW-Qg6"/>
                     <constraint firstItem="De8-QP-GX8" firstAttribute="top" secondItem="X4I-hG-aQn" secondAttribute="bottom" constant="1" id="GRT-hd-cdu"/>
                     <constraint firstItem="X4I-hG-aQn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="Glv-mR-UV4"/>
                     <constraint firstItem="De8-QP-GX8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="Zub-zV-7ag"/>
+                    <constraint firstAttribute="trailing" secondItem="De8-QP-GX8" secondAttribute="trailing" constant="100" id="aQt-NT-PzW"/>
                     <constraint firstItem="X4I-hG-aQn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="n1K-Wa-tEH"/>
                     <constraint firstAttribute="bottom" secondItem="ph0-fo-80D" secondAttribute="bottom" constant="11" id="uxp-SK-RCh"/>
                 </constraints>
